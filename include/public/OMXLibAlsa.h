@@ -1,0 +1,13 @@
+#pragma once
+#include <IL/OMX_Core.h>
+
+OMX_API OMX_ERRORTYPE OMX_APIENTRY OMXLIB_ALSA_GetHandle(
+		OMX_OUT OMX_HANDLETYPE* pHandle,
+OMX_IN  OMX_STRING cComponentName,
+OMX_IN  OMX_PTR pAppData,
+OMX_IN  OMX_CALLBACKTYPE* pCallBacks);
+
+OMX_API OMX_ERRORTYPE OMX_APIENTRY OMXLIB_ALSA_FreeHandle(
+		OMX_IN  OMX_HANDLETYPE hComponent);
+
+#define OMXLIB_ALSA_RENDERER "OMX.alsa.audio_render"
